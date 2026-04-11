@@ -29,7 +29,9 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
     <Accordion
       type="multiple"
       className="w-full"
-      defaultValue={experience.index === 1 ? ['item'] : []}
+      defaultValue={
+        experience.defaultOpenValueId === 'jaguarsolutions' ? ['item'] : []
+      }
     >
       <AccordionItem value="item" className="border-none">
         <div className="flex flex-col gap-5">

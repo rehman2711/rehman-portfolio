@@ -20,8 +20,7 @@ export interface Technology {
 }
 
 export interface Experience {
-  index: number;
-  defaultValueId: string;
+  defaultOpenValueId: string;
   company: string;
   position: string;
   location: string;
@@ -40,8 +39,7 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    index: 1,
-    defaultValueId: 'jaguarsolutions',
+    defaultOpenValueId: 'jaguarsolutions',
     company: 'Jaguar Solutions Pvt. Ltd.',
     position: 'Frontend Developer',
     location: 'Pimple Saudagar, India (On-Site)',
@@ -124,8 +122,7 @@ export const experiences: Experience[] = [
     isBlur: false,
   },
   // {
-  //   index: 2,
-  //   defaultValueId: 'ironman',
+  //   defaultOpenValueId: 'ironmansolutions',
   //   company: 'Iron Man Solutions Pvt. Ltd.',
   //   position: 'BackEnd Developer',
   //   location: 'Pimple Saudagar, India (On-Site)',

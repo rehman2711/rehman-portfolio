@@ -1,6 +1,6 @@
 {
-  "name": "sleek-portfolio",
-  "version": "0.1.0",
+  "name": "rehman-kalawant-portfolio",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",

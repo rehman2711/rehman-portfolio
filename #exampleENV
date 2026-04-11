@@ -1,0 +1,14 @@
+TELEGRAM_BOT_TOKEN=
+TELEGRAM_CHAT_ID=
+NODE_ENV=
+NEXT_PUBLIC_URL=
+NEXT_PUBLIC_UMAMI_SRC=
+NEXT_PUBLIC_UMAMI_ID=
+
+# TELEGRAM_BOT_TOKEN="your_telegram_bot_token"
+# TELEGRAM_CHAT_ID="your_telegram_bot_id_when_you_message_first_time_then_you_get_by_using_get_url_fire"
+# NODE_ENV="developement"
+# NEXT_PUBLIC_URL="localhost:3000"
+# NEXT_PUBLIC_UMAMI_SRC="your-umami-script-url"
+# NEXT_PUBLIC_UMAMI_ID="your-umami-website-id"
+# https://api.telegram.org/bot8622870916:AAHZM-4_y50ZVHLCNA6MgPAZkl9KxAihOxI/getUpdates

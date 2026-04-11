@@ -1,0 +1,176 @@
+---
+title: 'Gearshift API'
+description: 'A REST API for Gearshift Car Rentals featuring Cars CRUD, Booking operations, MySQL integration, image uploads to AWS S3, and Swagger documentation (OAS 3.0).'
+image: '/project/gearshift-api.png'
+technologies:
+  [
+    'Node.js',
+    'Express.js',
+    'MySQL',
+    'mysql2',
+    'Swagger (OAS 3.0)',
+    'swagger-jsdoc',
+    'swagger-ui-express',
+    'Multer',
+    'AWS S3',
+    'multer-s3',
+    'EJS',
+    'Dotenv',
+    'CORS',
+    'Render',
+  ]
+github: 'https://github.com/rehman2711/gearshift-api-with-db-express-js'
+live: 'https://gearshift-api-latest.onrender.com/'
+timeline: '1 month'
+role: 'Backend Developer'
+team: 'Solo'
+status: 'completed'
+featured: true
+challenges:
+  [
+    'Designing REST endpoints for cars and booking flow',
+    'MySQL schema planning (active bookings vs completed bookings)',
+    'Handling car image uploads in CRUD operations',
+    'AWS S3 upload pipeline (multer-s3) and configuration',
+    'Maintaining accurate Swagger docs (OAS 3.0)',
+    'Deployment debugging on Render with env config + CORS',
+  ]
+learnings:
+  [
+    'Building REST APIs with Express.js',
+    'Implementing MySQL-backed CRUD with mysql2',
+    'Handling file uploads using Multer',
+    'Storing uploads in AWS S3 using multer-s3',
+    'Creating production-ready Swagger documentation (OAS 3.0)',
+    'Structuring rental APIs with separate active and completed booking flows',
+  ]
+isPublished: true
+---
+
+# Gearshift Car Rentals API
+
+## Overview
+
+Gearshift API is the backend REST API for the Gearshift Rentals platform.
+It provides endpoints for **Cars CRUD**, **Bookings management**, and **image uploads**, backed by a **MySQL database**.
+
+The API includes **Swagger documentation (OAS 3.0)** so all endpoints can be tested and understood quickly.
+
+## Key API Features
+
+- **Cars Management (CRUD)**
+  - Add cars with images
+  - Fetch all cars
+  - Get car details by ID
+  - Update car details
+  - Delete cars
+
+- **Bookings System**
+  - Create bookings with customer details + uploaded image
+  - Fetch active bookings
+  - Move a booking to completed bookings
+  - Fetch completed bookings
+
+- **Uploads + Storage**
+  - Upload handling via Multer
+  - AWS S3 integration using multer-s3
+
+- **Swagger Docs**
+  - Proper endpoint grouping (Cars / Bookings)
+  - In-browser testing through Swagger UI
+
+## Why I Built This
+
+Most backend projects stop at CRUD.
+A car rental backend becomes meaningful only when you implement:
+- booking flows,
+- customer input management,
+- file upload support,
+- and real database-based operations.
+
+This API project was built to support real product operations for Gearshift Rentals.
+
+## Tech Stack
+
+- Node.js
+- Express.js
+- MySQL + mysql2
+- Swagger docs (OAS 3.0)
+- Multer + AWS S3 uploads
+- Render Deployment
+- Dotenv + CORS
+
+---
+
+## API Routes (Swagger)
+
+### Cars Routes
+
+- `GET /api/v1/all-cars`
+  - Get all cars
+
+- `GET /api/v1/single-car/{idd}`
+  - Get single car by ID
+
+- `POST /api/v1/insert-car`
+  - Insert a new car (with images)
+
+- `PATCH /api/v1/edit-car/{id}`
+  - Edit existing car data
+
+- `DELETE /api/v1/delete-car/{id}`
+  - Delete car by ID
+
+### Bookings Routes
+
+- `POST /api/v1/book-car`
+  - Create a new car booking with customer details and uploaded image
+
+- `GET /api/v1/book_car`
+  - Fetch all active car bookings
+
+- `DELETE /api/v1/delete-booking/{delete_id}`
+  - Move booking to completed table and delete from active bookings
+
+- `GET /api/v1/bookings_completed`
+  - Fetch all completed bookings
+
+---
+
+## Implementation Highlights
+
+- **Database Layer**
+  - Cars stored in MySQL inventory table
+  - Bookings stored in active bookings
+  - Completed bookings stored separately for better tracking and history
+
+- **Upload System**
+  - Car upload endpoints support images
+  - Booking endpoint supports customer image upload
+  - AWS S3 ensures scalable file storage
+
+- **Documentation**
+  - Swagger OAS 3.0 docs improve API usability and professionalism
+
+## Challenges
+
+- Maintaining a clean workflow between:
+  - active bookings → completed bookings
+- Handling file uploads safely while keeping endpoints simple
+- Keeping Swagger docs synchronized with code changes
+- Ensuring deployment works smoothly with env variables + CORS rules
+
+## Learnings
+
+- API documentation is a huge advantage in real development teams
+- File uploads are deceptively complex (validation + storage + security)
+- Schema design matters: active vs completed tables made booking lifecycle clearer
+- Deployment forces you to build more production-ready logic
+
+## Future Plans
+
+- Add Authentication + Roles (Admin vs Customer)
+- Add validation layer for payloads (Zod/Joi)
+- Add availability / double-booking prevention logic
+- Add pagination + filtering for cars and booking lists
+- Add structured error responses and rate limiting

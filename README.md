@@ -1,14 +1,9 @@
-# Sleek Portfolio by ramxcodes
+# Sleek Portfolio by rehmankalawant
 
 A modern, responsive portfolio website built with Next.js 15, TypeScript, Tailwind CSS, and Shadcn UI. Features a blog system, project showcase, work experience timeline, and contact form with Telegram integration.
 
-![Portfolio Preview](/public/meta/hero.png)
-
-## Deploy
-
-Click here to your portfolio template now:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Framxcodes%2Fsleek-portfolio&env=TELEGRAM_BOT_TOKEN,TELEGRAM_CHAT_ID,GEMINI_API_KEY,NEXT_PUBLIC_URL,NEXT_PUBLIC_UMAMI_SRC,NEXT_PUBLIC_UMAMI_ID)
+<img width="1898" height="962" alt="image" src="https://github.com/user-attachments/assets/5ddd4e40-0743-4a8d-a9fd-d2002a155c99" />
+<img width="1892" height="960" alt="image" src="https://github.com/user-attachments/assets/d56d792f-b356-441f-ab8e-c2d6a635e2f7" />
 
 ## Features
 
@@ -115,15 +110,12 @@ The project uses configuration files in the `src/config` directory for easy cust
 - `Contact.tsx` - Contact form settings
 - `Experience.tsx` - Work experience details
 - `Footer.tsx` - Footer links and content
-- `Gears.tsx` - Setup/gear section
 - `Hero.tsx` - Hero section content
 - `Meta.tsx` - SEO and metadata
 - `Navbar.tsx` - Navigation links
 - `Projects.tsx` - Project showcase settings
 - `Quote.ts` - Random quotes configuration
 - `Resume.ts` - Resume section details
-- `Setup.tsx` - Development setup information
-- `cat.ts` - Enable disable the cat
 
 ## Adding New Technology Icons
 
@@ -140,12 +132,6 @@ export const NewTechIcon = () => {
 ```
 
 ## Adding Content
-
-### Blog Posts
-
-1. Create a new MDX file in `src/data/blog/`
-2. Add metadata and content following existing post structure
-3. Add blog thumbnail in `public/blog/`
 
 ### Projects
 

@@ -3,7 +3,12 @@
 A modern, responsive portfolio website built with Next.js 15, TypeScript, Tailwind CSS, and Shadcn UI. Features a blog system, project showcase, work experience timeline, and contact form with Telegram integration.
 
 <img width="1898" height="962" alt="image" src="https://github.com/user-attachments/assets/5ddd4e40-0743-4a8d-a9fd-d2002a155c99" />
+
+---
+
 <img width="1892" height="960" alt="image" src="https://github.com/user-attachments/assets/d56d792f-b356-441f-ab8e-c2d6a635e2f7" />
+
+---
 
 ## Features
 

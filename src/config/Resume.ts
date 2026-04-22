@@ -1,3 +1,3 @@
 export const resumeConfig = {
-  url: 'https://drive.google.com/file/d/1ZO0ioLBcd0HCcURFRU1ESFmEQFvAtDM9/preview',
+  url: process.env.NEXT_PUBLIC_RESUME_LINK,
 };

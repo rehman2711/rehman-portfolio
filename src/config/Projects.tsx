@@ -18,6 +18,7 @@ import TailwindCss from '@/components/technologies/TailwindCss';
 import ThreeJs from '@/components/technologies/ThreeJs';
 import TypeScript from '@/components/technologies/TypeScript';
 import Vercel from '@/components/technologies/Vercel';
+import Xampp from '@/components/technologies/Xampp';
 import { Project } from '@/types/project';
 
 export const projects: Project[] = [
@@ -57,7 +58,7 @@ export const projects: Project[] = [
       'A RESTful API built with Express.js, providing secure and structured endpoints for handling CRUD operations and backend integration.',
     image: '/project/gearshift-api.png',
     // video: 'https://ik.imagekit.io/hokb3mrdr/appwrite.mp4',
-    link: 'https://gearshift-api-latest.onrender.com/',
+    link: 'https://gearshift-backend-api.onrender.com/',
     technologies: [
       { name: 'NPM', icon: <NPM key="npm" /> },
       { name: 'Node.js', icon: <NodeJs key="nodejs" /> },
@@ -65,9 +66,10 @@ export const projects: Project[] = [
       { name: 'Multer', icon: <Multer key="multer" /> },
       { name: 'AWS', icon: <AWS key="aws" /> },
       { name: 'Swagger', icon: <Swagger key="swagger" /> },
+      { name: 'Xampp', icon: <Xampp key="xampp" /> },
     ],
     github: 'https://github.com/rehman2711/gearshift-api-with-db-express-js',
-    live: 'https://gearshift-api-latest.onrender.com/',
+    live: 'https://gearshift-backend-api.onrender.com/',
     details: true,
     projectDetailsPageSlug: '/projects/gearshift-api',
     isWorking: true,

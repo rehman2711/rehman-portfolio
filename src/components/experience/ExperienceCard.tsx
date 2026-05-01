@@ -135,12 +135,12 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
                   )}
 
                   {/* TOGGLE BUTTON */}
-                  <AccordionTrigger className="p-0">
-                    <Tooltip>
-                      <TooltipTrigger asChild></TooltipTrigger>
-                      <TooltipContent>More Information</TooltipContent>
-                    </Tooltip>
-                  </AccordionTrigger>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <AccordionTrigger className="p-0"></AccordionTrigger>
+                    </TooltipTrigger>
+                    <TooltipContent>more</TooltipContent>
+                  </Tooltip>
                 </div>
               </div>
             </div>
